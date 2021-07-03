@@ -41,7 +41,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // 2. define a GET route.
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to Ask Me Anything-Team 8 App!😁" });
+  res.json({ message: "Welcome to Ask Me Anything-Team 8 App!😁 HELLO WORLD" });
 });
 
 // 3. set port, listen for requests
