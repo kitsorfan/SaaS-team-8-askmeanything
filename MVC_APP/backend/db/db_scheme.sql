@@ -25,8 +25,7 @@ USE ama_mvc;
 CREATE TABLE user (
   userID       int NOT NULL AUTO_INCREMENT, 
   email        varchar(255) NOT NULL UNIQUE CHECK (Email LIKE '%_@_%._%'), 
-  passwordHash varchar(255) NOT NULL, 
-  passwardSalt varchar(255) NOT NULL, 
+  password     varchar(255) NOT NULL, 
   PRIMARY KEY (userID), 
   INDEX (email));
 
@@ -70,6 +69,6 @@ CREATE TABLE answer (
   submissionTime  datetime NOT NULL DEFAULT CURRENT_TIMESTAMP, 
   questionID      int NOT NULL, 
   userID           int NOT NULL, 
-  PRIMARY KEY (aswerID),
+  PRIMARY KEY (answerID),
   FOREIGN KEY (questionID) REFERENCES question(questionID)
   ON UPDATE CASCADE ON DELETE CASCADE); -- if question is deleted then the answer will deleted too
