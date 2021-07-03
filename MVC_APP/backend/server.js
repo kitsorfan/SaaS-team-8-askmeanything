@@ -27,6 +27,13 @@ const cors = require("cors");                   // cors provides Express middlew
 const app = express();                          // 1. create Express app
 
 
+// Sync to DB
+const db = require("./app/models");
+db.sequelize.sync();
+
+// Rest
+
+
 var corsOptions = {                             // set origin
   origin: "http://localhost:8081"
 };
