@@ -65,7 +65,7 @@ CREATE TABLE hasTags (
 -- ------------<ANSWER>--------------
 
 CREATE TABLE answer (
-  aswerID         int NOT NULL AUTO_INCREMENT, 
+  answerID         int NOT NULL AUTO_INCREMENT, 
   atext           varchar(10000) NOT NULL, 
   submissionTime  datetime NOT NULL DEFAULT CURRENT_TIMESTAMP, 
   questionID      int NOT NULL, 
