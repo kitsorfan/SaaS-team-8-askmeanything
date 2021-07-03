@@ -69,7 +69,7 @@ CREATE TABLE answer (
   atext           varchar(10000) NOT NULL, 
   submissionTime  datetime NOT NULL DEFAULT CURRENT_TIMESTAMP, 
   questionID      int NOT NULL, 
-  useID           int NOT NULL, 
+  userID           int NOT NULL, 
   PRIMARY KEY (aswerID),
   FOREIGN KEY (questionID) REFERENCES question(questionID)
   ON UPDATE CASCADE ON DELETE CASCADE); -- if question is deleted then the answer will deleted too
