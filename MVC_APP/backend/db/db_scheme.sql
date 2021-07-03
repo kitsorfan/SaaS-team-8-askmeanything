@@ -25,8 +25,7 @@ USE ama_mvc;
 CREATE TABLE user (
   userID       int NOT NULL AUTO_INCREMENT, 
   email        varchar(255) NOT NULL UNIQUE CHECK (Email LIKE '%_@_%._%'), 
-  passwordHash varchar(255) NOT NULL, 
-  passwardSalt varchar(255) NOT NULL, 
+  password     varchar(255) NOT NULL, 
   PRIMARY KEY (userID), 
   INDEX (email));
 
@@ -65,11 +64,11 @@ CREATE TABLE hasTags (
 -- ------------<ANSWER>--------------
 
 CREATE TABLE answer (
-  aswerID         int NOT NULL AUTO_INCREMENT, 
+  answerID         int NOT NULL AUTO_INCREMENT, 
   atext           varchar(10000) NOT NULL, 
   submissionTime  datetime NOT NULL DEFAULT CURRENT_TIMESTAMP, 
   questionID      int NOT NULL, 
-  useID           int NOT NULL, 
-  PRIMARY KEY (aswerID),
+  userID           int NOT NULL, 
+  PRIMARY KEY (answerID),
   FOREIGN KEY (questionID) REFERENCES question(questionID)
   ON UPDATE CASCADE ON DELETE CASCADE); -- if question is deleted then the answer will deleted too
