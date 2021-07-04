@@ -1,9 +1,9 @@
 module.exports = (sequelize, Sequelize) => {
-    const answer = sequelize.define("questionTag", {
+    const answer = sequelize.define("answer", {
       answerID: {
         type: Sequelize.INTEGER,
         primaryKey: 1,
-        autoIncrement: 0, 
+        autoIncrement: 1, 
         allowNull: 0
       },
      atext: {
