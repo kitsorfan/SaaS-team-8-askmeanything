@@ -2,13 +2,13 @@ module.exports = (sequelize, Sequelize) => {
     const questionTag = sequelize.define("questionTag", {
       id: {
         type: Sequelize.INTEGER,
-        primaryKey: true,
-        autoIncrement: true, 
-        allowNull: false
+        primaryKey: 1,
+        autoIncrement: 1, 
+        allowNull: 0
       },
      tag: {
        type: Sequelize.STRING,
-       allowNull: false
+       allowNull: 0
      }
     });
   

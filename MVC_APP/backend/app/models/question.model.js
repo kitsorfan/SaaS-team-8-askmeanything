@@ -2,21 +2,21 @@ module.exports = (sequelize, Sequelize) => {
     const question = sequelize.define("question", {
       questionID: {
         type: Sequelize.INTEGER,
-        primaryKey: true,
-        autoIncrement: true, 
-        allowNull: false
+        primaryKey: 1,
+        autoIncrement: 1, 
+        allowNull: 0
       },
       title: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: 0
       },
       qtext: {
         type: Sequelize.STRING(5000),
-        allowNull: false,
+        allowNull: 0,
       },
      submissionTime: {
         type: Sequelize.DATE,
-        allowNull: false
+        allowNull: 0
       }
     });
   
