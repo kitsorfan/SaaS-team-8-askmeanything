@@ -3,29 +3,29 @@
 
 base URL: http://localhost:8080/
 
-### TESTING ✅
-🟡/api/test/all        `GET`   
-🟡/api/test/user       `GET`      users
+### 🟡TESTING 
+`GET`/api/test/all           
+`GET`/api/test/user             users
 
 
-### AUTORIZATION 🔐
-🟠/api/auth/signup    `POST`       
-🟠/api/test/signin    `POST`      *(jwt required)*
+### 🟠AUTORIZATION 
+`POST`/api/auth/signup           
+`POST`/api/test/signin          *(jwt required)*
 
 
-###  PUBLIC AVAILABLE CONTENT 📊
-🟣/api/public/questionsPerKeyword   `GET`       
-🟣/api/public/questionPerWeek       `GET`
+###  🟣PUBLIC AVAILABLE CONTENT 
+`GET`/api/public/questionsPerKeyword          
+`GET` /api/public/questionPerWeek       
 
 
-###  USER CREATE QUESTION/ANSWER ❔
-🟢/api/user/newQuestion 	`POST`        *(jwt required)*
-🟢/api/user/answerQuestion   `POST`       *(jwt required)*
+###  🟢USER CREATE QUESTION/ANSWER 
+`POST`/api/user/newQuestion 	        *(jwt required)*
+`POST`/api/user/answerQuestion          *(jwt required)*
 
 
-### USER DATA 🧾
-🔵/api/user/myQuestions         `GET`    *(jwt required)*
-🔵/api/user/myAnswers           `GET`    *(jwt required)*
-🔵/api/user/contributionsPerDay `GET`    *(jwt required)*
+### 🔵USER DATA 
+`GET`/api/user/myQuestions             *(jwt required)*
+`GET`/api/user/myAnswers               *(jwt required)*
+`GET`/api/user/contributionsPerDay     *(jwt required)*
 
 
