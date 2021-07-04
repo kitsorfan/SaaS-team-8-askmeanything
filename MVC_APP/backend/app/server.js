@@ -28,7 +28,7 @@ const app = express();                          // 1. create Express app
 
 
 // Sync to DB
-const db = require("./app/models");
+const db = require("../app/models");
 db.sequelize.sync();
 
 // Rest
@@ -50,6 +50,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to Ask Me Anything-Team 8 App!😁 HELLO WORLD" });
 });
+
+// routes
+require('../app/routes/auth.routes')(app);
+require('../app/routes/user.routes')(app);
+
+// set port, listen for requests
 
 // 3. set port, listen for requests
 const PORT = process.env.PORT || 8080;      // 8080 for http requests

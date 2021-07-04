@@ -31,20 +31,20 @@ db.answer = require("../models/answer.model.js")(sequelize, Sequelize);
 
 
 db.user.hasMany(db.question, {foreignKey: "userID"});
-db.question.belongTo(db.user, {foreignKey: "userID"});
+db.question.belongsTo(db.user, {foreignKey: "userID"});
 
 db.user.hasMany(db.answer, {foreignKey: "userID"});
-db.answer.belongTo(db.user, {foreignKey: "userID"});
+db.answer.belongsTo(db.user, {foreignKey: "userID"});
 
 db.question.hasMany(db.answer,{foreignKey: "questionID"});
-db.answer.belongTo(db.question,{foreignKey: "questionID"});
+db.answer.belongsTo(db.question,{foreignKey: "questionID"});
 
 db.question.belongsToMany(db.questionTag, {
     through: "hasTags",
     foreignKey: "questionID",
     otherKey: "id"
   });
-  db.questonTag.belongsToMany(db.question, {
+  db.questionTag.belongsToMany(db.question, {
     through: "hasTags",
     foreignKey: "id",
     otherKey: "questionID"
