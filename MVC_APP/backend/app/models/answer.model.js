@@ -2,17 +2,17 @@ module.exports = (sequelize, Sequelize) => {
     const answer = sequelize.define("answer", {
       answerID: {
         type: Sequelize.INTEGER,
-        primaryKey: 1,
-        autoIncrement: 1, 
-        allowNull: 0
+        primaryKey: true,
+        autoIncrement: true, 
+        allowNull: false
       },
      atext: {
        type: Sequelize.STRING(10000),
-       allowNull: 0
+       allowNull: false
      },
     submissionTime: {
       type: Sequelize.DATE,
-      allowNull: 0
+      allowNull: false
     }
     });
   

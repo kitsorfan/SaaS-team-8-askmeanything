@@ -2,18 +2,18 @@ module.exports = (sequelize, Sequelize) => {
     const user = sequelize.define("user", {
       userID: {
         type: Sequelize.INTEGER,
-        primaryKey: 1,
-        autoIncrement: 1,
-        allowNull: 0
+        primaryKey: true,
+        autoIncrement: true,
+        allowNull: false
 
       },
       email: {
         type: Sequelize.STRING,
-        allowNull: 0
+        allowNull: false
       },
       password: {
         type: Sequelize.STRING,
-        allowNull: 0
+        allowNull: false
       }
     });
   
