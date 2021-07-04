@@ -1,6 +1,6 @@
 const db = require("../models");
 const config = require("../config/auth.config");
-const User = db.user;
+const user = db.user;
 const Role = db.role;
 
 const Op = db.Sequelize.Op;
@@ -9,14 +9,13 @@ var jwt = require("jsonwebtoken");
 var bcrypt = require("bcryptjs"); // we use bcrypt (we can say that it does have an "embedded salt", so it is considered secure)
 
 exports.signup = (req, res) => {
-  // Save User to Database
-  User.create({
-    username: req.body.username,
+  // Save user to Database
+  user.create({
     email: req.body.email,
     password: bcrypt.hashSync(req.body.password, 8)
   })
     .then(user => {
-        res.send({ message: "User was registered successfully!" });
+        res.send({ message: "user was registered successfully!" });
     })
     .catch(err => {
       res.status(500).send({ message: err.message });
@@ -24,14 +23,14 @@ exports.signup = (req, res) => {
 };
 
 exports.signin = (req, res) => {
-  User.findOne({
+  user.findOne({
     where: {
-      username: req.body.username
+      email: req.body.email
     }
   })
     .then(user => {
       if (!user) {
-        return res.status(404).send({ message: "User Not found." });
+        return res.status(404).send({ message: "user Not found." });
       }
 
       var passwordIsValid = bcrypt.compareSync(
