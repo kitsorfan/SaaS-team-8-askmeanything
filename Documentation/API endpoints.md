@@ -8,7 +8,7 @@ base URL: http://localhost:8080/
 `GET`/api/test/user             users
 
 
-### 🟠AUTORIZATION 
+### 🟠AUTHORIZATION 
 `POST`/api/auth/signup           
 `POST`/api/test/signin          *(jwt required)*
 
@@ -19,13 +19,14 @@ base URL: http://localhost:8080/
 
 
 ###  🟢USER CREATE QUESTION/ANSWER 
-`POST`/api/user/newQuestion 	        *(jwt required)*
-`POST`/api/user/answerQuestion          *(jwt required)*
+`POST`/api/user/newQuestion *(jwt required)*
+`POST`/api/user/answerQuestion *(jwt required)*
 
 
 ### 🔵USER DATA 
-`GET`/api/user/myQuestions             *(jwt required)*
-`GET`/api/user/myAnswers               *(jwt required)*
-`GET`/api/user/contributionsPerDay     *(jwt required)*
+`GET`/api/user/allQuestions *(jwt required)*
+`GET`/api/user/myQuestions *(jwt required)*
+`GET`/api/user/myAnswers   *(jwt required)*
+`GET`/api/user/contributionsPerDay *(jwt required)*
 
 
