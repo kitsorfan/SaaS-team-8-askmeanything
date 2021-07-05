@@ -12,6 +12,8 @@ module.exports = function(app) {
 
   app.get("/api/test/all", controller.testAll);
 
+  app.get("/api/initializeDB",controller.initializeDB);
+
   app.get(
     "/api/test/user",
     [authJwt.verifyToken],
