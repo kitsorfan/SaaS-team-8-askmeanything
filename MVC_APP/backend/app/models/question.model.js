@@ -13,10 +13,6 @@ module.exports = (sequelize, Sequelize) => {
       qtext: {
         type: Sequelize.STRING(5000),
         allowNull: false,
-      },
-     submissionTime: {
-        type: Sequelize.DATE,
-        allowNull: false
       }
     });
   
