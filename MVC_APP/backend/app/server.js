@@ -55,6 +55,8 @@ app.get("/", (req, res) => {
 require('../app/routes/auth.routes')(app);
 require('../app/routes/user.routes')(app);
 require('../app/routes/public/questionsPerKeyword.routes')(app);
+require('../app/routes/public/questionsPerDay.routes')(app);
+
 
 
 // set port, listen for requests

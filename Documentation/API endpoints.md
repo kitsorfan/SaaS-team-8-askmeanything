@@ -17,7 +17,7 @@ base URL: http://localhost:8080/
 
 ###  🟣PUBLIC AVAILABLE CONTENT 
 `GET`/api/public/questionsPerKeyword          
-`GET` /api/public/questionPerWeek       
+`GET` /api/public/questionPerDay       
 
 
 ###  🟢USER CREATE QUESTION/ANSWER 
