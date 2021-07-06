@@ -58,6 +58,8 @@ require('../app/routes/public/questionsPerKeyword.routes')(app);
 require('../app/routes/public/questionsPerDay.routes')(app);
 require('../app/routes/userCreate/newQuestion.routes')(app);
 require('../app/routes/userCreate/newAnswer.routes')(app);
+require('../app/routes/userData/allQuestions.routes')(app);
+
 
 
 
