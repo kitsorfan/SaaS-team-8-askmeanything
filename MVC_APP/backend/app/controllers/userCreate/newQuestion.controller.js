@@ -5,7 +5,7 @@ exports.newQuestion = (req, res) => {
     question.create({
         title: req.body.title,
         qtext: req.body.qtext,
-        userID: req.userID
+        userID: parseInt(req.userId)
       })
         .then(user => {
             res.send({ message: "Question created succesfuly" });
