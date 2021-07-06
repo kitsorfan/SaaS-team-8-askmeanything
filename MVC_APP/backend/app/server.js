@@ -59,6 +59,8 @@ require('../app/routes/public/questionsPerDay.routes')(app);
 require('../app/routes/userCreate/newQuestion.routes')(app);
 require('../app/routes/userCreate/newAnswer.routes')(app);
 require('../app/routes/userData/allQuestions.routes')(app);
+require('../app/routes/userData/myQuestions.routes')(app);
+
 
 
 
