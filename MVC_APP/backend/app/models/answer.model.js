@@ -9,11 +9,7 @@ module.exports = (sequelize, Sequelize) => {
      atext: {
        type: Sequelize.STRING(10000),
        allowNull: false
-     },
-    submissionTime: {
-      type: Sequelize.DATE,
-      allowNull: false
-    }
+     }
     });
   
     return answer;

@@ -5,7 +5,9 @@ base URL: http://localhost:8080/
 
 ### 🟡TESTING 
 `GET`/api/test/all           
-`GET`/api/test/user             users
+`GET`/api/test/user
+`GET`/api/test/initializeDB
+
 
 
 ### 🟠AUTHORIZATION 
