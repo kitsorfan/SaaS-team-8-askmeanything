@@ -60,6 +60,8 @@ require('../app/routes/userCreate/newQuestion.routes')(app);
 require('../app/routes/userCreate/newAnswer.routes')(app);
 require('../app/routes/userData/allQuestions.routes')(app);
 require('../app/routes/userData/myQuestions.routes')(app);
+require('../app/routes/userData/myAnswers.routes')(app);
+
 
 
 
