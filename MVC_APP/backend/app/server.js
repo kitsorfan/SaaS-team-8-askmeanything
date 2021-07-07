@@ -61,6 +61,8 @@ require('../app/routes/userCreate/newAnswer.routes')(app);
 require('../app/routes/userData/allQuestions.routes')(app);
 require('../app/routes/userData/myQuestions.routes')(app);
 require('../app/routes/userData/myAnswers.routes')(app);
+require('../app/routes/userData/myAnswersPerDay.routes')(app);
+
 
 
 
