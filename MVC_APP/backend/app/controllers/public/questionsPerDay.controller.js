@@ -11,6 +11,7 @@ exports.questionsPerDay= (req, res) => {
       [sequelize.literal('DATE(createdAt)'), 'date'],
       [sequelize.literal(`COUNT(*)`), 'count']
     ],
+    group: 'date',
     limit: 7 //we will examine only the last week
   })
     .then(results => {
