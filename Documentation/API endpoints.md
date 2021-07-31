@@ -9,7 +9,7 @@ only accepts requests from URL: http://localhost:3000/
 
 ### 🟡TESTING 
 `GET`/api/test/all           
-`GET`/api/test/user
+`GET`/api/test/user <br>
 `GET`/api/test/initializeDB (**! warning: NOT SAFE !**)
 
 <br>
@@ -32,7 +32,7 @@ only accepts requests from URL: http://localhost:3000/
 
 
 ###  🟢USER CREATE QUESTION/ANSWER 
-`POST`/api/user/newQuestion *(jwt required)*
+`POST`/api/user/newQuestion *(jwt required)* <br>
 `POST`/api/user/answerQuestion *(jwt required)*
 
 <br>
