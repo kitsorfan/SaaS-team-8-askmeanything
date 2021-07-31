@@ -1,0 +1,53 @@
+
+.questionBox{
+    align-content: center;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+    text-align: left;
+}
+
+
+
+.headerTitle{
+    font-size: 2.2vh;
+    font-weight: bold;
+    margin-top: 0;
+}
+.titleTextBox{
+    height: 4vh;
+    font-size: 2.2vh;
+    margin-bottom: 0;
+    background-color: rgba(250, 235, 215, 0.455);
+    transition: 300ms;
+}
+.titleTextBox:hover{
+    background-color: rgba(250, 235, 215, 0.655);
+    transition: 300ms;
+}
+
+.titleTextBox:focus{
+    background-color: rgba(250, 235, 215, 0.855);
+    transition: 300ms;
+}
+.titleTextareaBox{
+    font-size: 2.2vh;
+    background-color: rgba(250, 235, 215, 0.455);
+    transition: 300ms;
+}
+.titleTextareaBox:hover{
+    background-color: rgba(250, 235, 215, 0.655);
+    transition: 300ms;
+}
+
+.titleTextareaBox:focus{
+    background-color: rgba(250, 235, 215, 0.855);
+    transition: 300ms;
+}
+
+.warningTextLeft{
+    font-size: 1.9vh;
+    font-weight: 500;
+    color: rgb(156, 11, 11);  
+    align-items: left;
+    /* padding:none; */
+}
