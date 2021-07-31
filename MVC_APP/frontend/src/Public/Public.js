@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container'
 
 import QuestionsPerKeyword from './QuestionsPerKeyword'
 import QuestionsPerDay from './QuestionsPerDay'
-import BrowseQuestions from '../Questions/BrowseQuestions'
+import AllQuestions from '../Questions/AllQuestions'
 import NewQuestion from '../Questions/NewQuestion'
 import NewAnswer from '../Questions/NewAnswer'
 
@@ -28,7 +28,7 @@ function Public() {
             <Route path='/questionsPerDay' component={QuestionsPerDay} />
             <Route path='/newQuestion' component={NewQuestion} />
             <Route path='/newAnswer' component={NewAnswer} />
-            <Route path='/allQuestions' component={BrowseQuestions} />
+            <Route path='/allQuestions' component={AllQuestions} />
 
           </Switch>
         </Container>
