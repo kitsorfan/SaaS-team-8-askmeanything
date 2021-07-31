@@ -51,9 +51,9 @@
     ">
     🟣Documentation:
 
-    VPP file includes UML Component diagrams for all architectures (MVC, SOA, Microservices).
-    Deployment diagram for MVC.
-    Sequence Diagram for MVC and ERD
+    VPP file includes UML Component, Deployment and Sequence diagrams for MVC architecture.
+    There is also an ERD diagram 
+    and a component diagram for SOA architecture.
 </dl>
 
 
