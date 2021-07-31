@@ -1,0 +1,37 @@
+.footer {
+    min-height: 5.5vh;
+    background: rgba(15, 7, 31, 0.7);
+    text-align: center;
+    position: fixed;
+
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    display: inline-block;  
+    vertical-align: top;
+
+}
+
+.footer:hover{
+    background: rgba(15, 7, 31, 0.9);
+    transition: 300ms;
+
+}
+
+.footerLink{
+    font-size: 1.9vh;
+    display:inline-block;
+    padding-inline:  clamp(1vh, 5%, 20vh);
+
+    margin: 1vh clamp(1vh, 5%, 3vh);
+}
+
+
+a {
+    color: rgba(255,255,255,.55);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(255,255,255,.75);
+}
