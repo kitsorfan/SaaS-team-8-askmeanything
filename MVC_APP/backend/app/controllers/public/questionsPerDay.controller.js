@@ -8,11 +8,10 @@ const sequelize = require("sequelize");
 exports.questionsPerDay= (req, res) => {
   question.findAll({
     attributes: [
-      [sequelize.literal('DATE(createdAt)'), 'date'],
-      [sequelize.literal(`COUNT(*)`), 'count']
+      [sequelize.literal('DATE(createdAt)'), 'day'],
+      [sequelize.literal(`COUNT(*)`), 'value']
     ],
-    group: 'date',
-    limit: 7 //we will examine only the last week
+    group: 'day',
   })
     .then(results => {
       if (!results) {
