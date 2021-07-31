@@ -12,8 +12,8 @@
      Team members:
 
     🔐Stylianos Kandylakis el17088
-    ⚙Kitsos Orfanopoulos el17025
-    🖌Vasilis Papalexis el17816
+    💻Kitsos Orfanopoulos el17025
+    🎨Vasilis Papalexis el17816
 </dl>
 
 
@@ -39,8 +39,8 @@
      Technonlogies:
 
     🔐 MySQL
-    🛠 Node Express (JWT, Sequeilize)
-    🖼 React JS (Axios, Bootstrap, React-Dom)
+    💻 Node Express (JWT, Sequeilize)
+    🎨 React JS (Axios, Bootstrap, React-Dom)
 </dl>
 <hr>
 <dl>
@@ -50,7 +50,9 @@
     ">
      Documentation:
 
-    VPP file includes UML Component diagrams for all architectures (MVC, SOA, Microservices), Deployment diagram for MVC, Sequence Diagram for MVC and ERD
+    VPP file includes UML Component diagrams for all architectures (MVC, SOA, Microservices).
+    Deployment diagram for MVC.
+    Sequence Diagram for MVC and ERD
 </dl>
 
 
@@ -61,9 +63,10 @@
     color: #b71a1a; 
     font-weight: 700;
     ">
-     YouTrack Stuff:
+     Agile & YouTrack:
 
-    asdf
+    We followed  the agile methodology for project managment. 
+    We used the platform Youtrack for the coordination of our efforts.
 </dl>
 
 <hr>
