@@ -1,6 +1,10 @@
 const db = require("../../models");
 const question = db.question;
-const user = db.user;
+// const user = db.user;
+const sequelize = require("sequelize");
+const { questionTag } = require("../../models");
+const { user } = require("../../models");
+
 
 
 
@@ -40,15 +44,26 @@ return(new Date(datetime));
 exports.allQuestions = (req, res) => {
 
     question.findAll({
-      include: {
+      include: [{
         model: user,
         required: true,
-        attributes: ['email'],
-        
+        attributes: [],
       },
+      { 
+        model:questionTag,
+        required: true,
+        attributes: []
+      }],
       raw: true,
-      attributes: [['questionID','ID'],['title','Title'],['qtext','Question'],['createdAt','Submission Date']],
+      attributes: [
+        [sequelize.literal('user.email'), 'email'],
+        ['questionID','ID'],
+        ['title','Title'],
+        ['qtext','Question'],
+        [sequelize.literal('DATE(question.createdAt)'), 'day'],
+        [sequelize.literal('questionTag.tag'),'tag']],
       limit: parseInt(req.body.limit),
+      offset: parseInt(req.body.offset),
         order: [['questionId','DESC']]
       })
         .then(results => {
