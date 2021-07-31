@@ -9,7 +9,7 @@
     color: #abbf12; 
     font-weight: 700;
     ">
-     Team members:
+     🟡Team members:
 
     🔐Stylianos Kandylakis el17088
     💻Kitsos Orfanopoulos el17025
@@ -23,7 +23,7 @@
     color: #3bbf12; 
     font-weight: 700;
     ">
-     Used Architecture(s):
+     U🟢sed Architecture(s):
 
     MVC
 </dl>
@@ -36,7 +36,7 @@
     color: #2272ff; 
     font-weight: 700;
     ">
-     Technonlogies:
+     🔵Technonlogies:
 
     🔐 MySQL
     💻 Node Express (JWT, Sequeilize)
@@ -48,7 +48,7 @@
     color: #ab4fef; 
     font-weight: 700;
     ">
-     Documentation:
+    🟣Documentation:
 
     VPP file includes UML Component diagrams for all architectures (MVC, SOA, Microservices).
     Deployment diagram for MVC.
@@ -63,7 +63,7 @@
     color: #b71a1a; 
     font-weight: 700;
     ">
-     Agile & YouTrack:
+    🔴Agile & YouTrack:
 
     We followed  the agile methodology for project managment. 
     We used the platform Youtrack for the coordination of our efforts.
