@@ -16,6 +16,7 @@
     🎨Vasilis Papalexis el17816
 </dl>
 
+<hr>
 
 
 <dl>
@@ -23,7 +24,7 @@
     color: #3bbf12; 
     font-weight: 700;
     ">
-     U🟢sed Architecture(s):
+     🟢Used Architecture(s):
 
     MVC
 </dl>
@@ -56,6 +57,7 @@
 </dl>
 
 
+<hr>
 
 
 <dl>
