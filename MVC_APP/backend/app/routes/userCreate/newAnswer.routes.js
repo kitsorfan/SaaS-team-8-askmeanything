@@ -10,7 +10,7 @@ module.exports = function(app) {
     next();
   });
 
-  app.get("/api/userCreate/newAnswer",
+  app.post("/api/userCreate/newAnswer",
     [authJwt.verifyToken],
     controller.newAnswer
   );
