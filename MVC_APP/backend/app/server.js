@@ -35,7 +35,7 @@ db.sequelize.sync();
 
 
 var corsOptions = {                             // set origin
-  origin: "http://localhost:8081"
+  origin: "http://localhost:3000"
 };
 
 app.use(cors(corsOptions));                     // add bodyParser
@@ -48,7 +48,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // 2. define a GET route.
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to Ask Me Anything-Team 8 App!😁 HELLO WORLD" });
+  res.json({ message: "Welcome to Ask Me Anything-Team 8 App!😁" });
 });
 
 // routes
@@ -56,6 +56,8 @@ require('../app/routes/auth.routes')(app);
 require('../app/routes/user.routes')(app);
 require('../app/routes/public/questionsPerKeyword.routes')(app);
 require('../app/routes/public/questionsPerDay.routes')(app);
+require('../app/routes/public/allTags.routes')(app);
+require('../app/routes/public/countQuestions.routes')(app);
 require('../app/routes/userCreate/newQuestion.routes')(app);
 require('../app/routes/userCreate/newAnswer.routes')(app);
 require('../app/routes/userData/allQuestions.routes')(app);

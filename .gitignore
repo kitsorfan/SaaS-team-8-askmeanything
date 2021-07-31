@@ -19,3 +19,4 @@ jboss/server/minimal/work/**/*
 *.DEPLOYED
 
 node_modules
+.vscode/settings.json

@@ -1,26 +1,24 @@
 const db = require("../../models");
 const question = db.question;
-const questionTag = db.questionTag;
-const hasTags = db.hasTags;
 const sequelize = require("sequelize");
-
+const { questionTag } = require("../../models");
 
 exports.questionsPerKeyword = (req, res) => {
-  questionTag.findAll({
-    include: [{
-      model: question,
-      attributes: [],
-      through: hasTags,
-      required: true,
-      right: true,
-    }],
+  question.findAll({
+      include:{
+        model:questionTag,
+        required: true,
+        attributes: []
+    },
+    raw: true,
     attributes: [
-      ['tag','tag'],[sequelize.fn('COUNT', sequelize.col('tag')), 'n_tags']
-    ],
-    
-    group: "tag"
-  
-  })
+      [sequelize.literal('questionTag.tag'),'id'],
+      [sequelize.fn('COUNT', sequelize.col('tag')), 'value'],
+],
+group: 'questionTag.id'
+})
+
+
     .then(results => {
       if (!results) {
         return res.status(404).send({ message: "No questions available" });

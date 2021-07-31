@@ -1,0 +1,113 @@
+.ourPagination{
+    position: fixed;
+    right: 6vh;
+    bottom: 6vh;
+}
+
+.QuestionBox{
+    /* height: 15vh; */
+    font-size: 2.2vh;
+    margin-bottom: 4vh;
+    background-color: rgba(235, 222, 222, 0.623);
+    transition: 300ms;
+    padding: 0.2vh 2vh 2vh 2vh;
+    border-radius: 3vh;
+    border-color: rgba(24, 9, 59, 0.248);
+    border: solid;
+    border-width: 1px;
+}
+.QuestionBox:hover{
+    background-color: rgba(250, 235, 215, 0.755);
+    border-color: rgba(24, 9, 59, 0.248);
+
+    transition: 300ms;
+    
+}
+
+
+.answerButton {
+    float:right;
+    
+    margin-top: 0.5vh;
+    min-height: 2vh;
+
+    font-size: 1.8vh;
+    font-weight: 500;
+    color:rgba(31, 31, 36, 0.7);
+
+    border-color: rgba(1, 1, 5, 0.2);
+    border-radius: 10vh;
+}
+.answerButton:hover{
+    color:black;
+
+}
+.s3{
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+
+.s3:hover {
+    background-color: rgba(188, 201, 116, 0.849);
+    border-color: rgba(1, 1, 5, 0.4);
+    transition: 300ms;
+
+}
+
+.s3:active{
+    background-color: rgba(57, 126, 12, 0.664);
+    transition: 300ms;
+}
+.s3:focus{
+    background-color: rgba(96, 173, 45, 0.808);
+    transition: 300ms;
+}
+
+.control{
+    height: 4vh;
+}
+.fourHead{
+    
+    min-height: 5vh;
+}
+
+hr{
+    margin:0.5vh 0vh;
+    border-top: 2px dashed rgba(40, 7, 54, 0.253);
+   
+}
+.id{
+    font-style: italic;
+    font-size: 2vh;
+    font-weight: 300;
+    color:rgb(6, 6, 83);
+}
+.tag{
+    font-size: 2.2vh;
+    font-weight: bold;
+    color:rgb(43, 11, 117)
+}
+.email{
+    font-size: 1.9vh;
+    font-weight: 500;
+    color:rgb(27, 80, 3)
+}
+.day{
+    float: right;
+    color:rgb(80, 18, 7);
+    font-weight: 600;
+}
+.paragraph{
+    margin:0;
+}
+
+.qTitle{
+    font-size: 3.8vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(46, 45, 45);
+}
+.centralBox{
+    border-radius: 1vh;
+    background-color: rgba(252, 251, 232, 0.553);
+    padding: 2vh;
+}

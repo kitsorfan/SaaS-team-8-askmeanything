@@ -40,17 +40,8 @@ db.answer.belongsTo(db.user, {foreignKey: "userID"});
 // db.question.hasMany(db.answer,{foreignKey: "questionID"});
 db.answer.belongsTo(db.question,{foreignKey: "questionID"});
 
-db.question.belongsToMany(db.questionTag, {
-    through: "hasTags",
-    foreignKey: "questionID",
-    otherKey: "id"
-  });
-  db.questionTag.belongsToMany(db.question, {
-    through: "hasTags",
-    foreignKey: "id",
-    otherKey: "questionID"
-  });
 
+db.question.belongsTo(db.questionTag,{foreignKey: "tagID"})
 
 
 db.BANNED = []; 
