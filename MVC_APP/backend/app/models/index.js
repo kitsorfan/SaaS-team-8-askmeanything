@@ -31,13 +31,13 @@ db.questionTag = require("../models/questionTag.model.js")(sequelize, Sequelize)
 db.answer = require("../models/answer.model.js")(sequelize, Sequelize);
 
 
-// db.user.hasMany(db.question, {foreignKey: "userID"});
+db.user.hasMany(db.question, {foreignKey: "userID"});
 db.question.belongsTo(db.user, {foreignKey: "userID"});
 
-// db.user.hasMany(db.answer, {foreignKey: "userID"});
+db.user.hasMany(db.answer, {foreignKey: "userID"});
 db.answer.belongsTo(db.user, {foreignKey: "userID"});
 
-// db.question.hasMany(db.answer,{foreignKey: "questionID"});
+db.question.hasMany(db.answer,{foreignKey: "questionID"});
 db.answer.belongsTo(db.question,{foreignKey: "questionID"});
 
 

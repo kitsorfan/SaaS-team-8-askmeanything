@@ -1,9 +1,10 @@
 const db = require("../../models");
 const question = db.question;
-// const user = db.user;
 const sequelize = require("sequelize");
 const { questionTag } = require("../../models");
 const { user } = require("../../models");
+const { answer } = require("../../models");
+
 
 
 
@@ -53,7 +54,14 @@ exports.allQuestions = (req, res) => {
         model:questionTag,
         required: true,
         attributes: []
-      }],
+      },
+      { 
+        model:answer,
+        required: false,
+        attributes: [['answerID','countAnswers']]
+      
+      },
+    ],
       raw: true,
       attributes: [
         [sequelize.literal('user.email'), 'email'],
@@ -62,6 +70,7 @@ exports.allQuestions = (req, res) => {
         ['qtext','Question'],
         [sequelize.literal('DATE(question.createdAt)'), 'day'],
         [sequelize.literal('questionTag.tag'),'tag']],
+
       limit: parseInt(req.body.limit),
       offset: parseInt(req.body.offset),
         order: [['questionId','DESC']]
