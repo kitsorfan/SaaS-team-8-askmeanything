@@ -7,10 +7,11 @@ import QuestionsPerDay from './QuestionsPerDay'
 import AllQuestions from '../Questions/AllQuestions'
 import NewQuestion from '../Questions/NewQuestion'
 import NewAnswer from '../Questions/NewAnswer'
+import AnswersOfQuestion from '../Questions/AnswersOfQuestion'
+import MyQuestions from '../Questions/MyQuestions'
 
 
 import Home from './Home'
-
 
 
 import Header from '../HeaderFooter/Header'
@@ -29,6 +30,9 @@ function Public() {
             <Route path='/newQuestion' component={NewQuestion} />
             <Route path='/newAnswer' component={NewAnswer} />
             <Route path='/allQuestions' component={AllQuestions} />
+            <Route path='/answersOfQuestion' component={AnswersOfQuestion} />
+            <Route path='/myQuestions' component={MyQuestions} />
+
 
           </Switch>
         </Container>

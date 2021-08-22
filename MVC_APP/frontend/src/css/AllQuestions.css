@@ -113,3 +113,8 @@ hr{
     background-color: rgba(252, 251, 232, 0.553);
     padding: 2vh;
 }
+
+.alignCenter{
+    align: center;
+    margin: auto;
+}
