@@ -44,6 +44,12 @@ function App() {
                   state={{ alert: true }}   // alert user to sign in in or sign up
                   component={Public}
               />
+              <ProtectedRoute
+                  path='/answersOfQuestion'
+                  redirect='/signin'         // redirect user to signin page if unauthorized
+                  state={{ alert: true }}   // alert user to sign in in or sign up
+                  component={Public}
+              />
               <Route path='/' component={Public} />
             </Switch>
           </AuthProvider>

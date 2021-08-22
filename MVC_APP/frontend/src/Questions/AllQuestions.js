@@ -81,7 +81,19 @@ function AllQuestions() {
                    pathname: "/newAnswer",
                    state: {questionID: parseInt(question.ID)}
               }}>Answer this question✏</Link>
+              {question['countAnswers'] ? <div>
+              <Link className="btn answerButton s2" to={{
+                   pathname: "/answersOfQuestion",
+                   state: {questionID: parseInt(question.ID), 
+                          countAnswers: parseInt(question['countAnswers']),
+                          questionTitle: question.Title,
+                          questionText: question.Question
+                          }
+              }}>View {question['countAnswers']} answer(s)🔍 </Link>
+                  </div>
+              : <div> </div>
 
+              }  
               </div>
 
             ))}

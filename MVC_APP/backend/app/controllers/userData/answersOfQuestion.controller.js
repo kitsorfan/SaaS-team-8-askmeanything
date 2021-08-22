@@ -26,8 +26,9 @@ exports.answersOfQuestion = (req, res) => {
         [sequelize.literal('user.email'), 'email'],
         ['answerID','ID'],
         ['atext','Answer'],
-        [sequelize.literal('DATE(answer.createdAt)'), 'day']],
-      })
+        [sequelize.literal('DATE(answer.createdAt)'), 'day',]],
+      
+      order: [[sequelize.literal('ID'), 'DESC']]})
         .then(results => {
             res.send(results);
         })

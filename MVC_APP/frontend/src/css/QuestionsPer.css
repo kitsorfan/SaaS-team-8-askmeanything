@@ -17,8 +17,8 @@
 .headerBox:hover{
     background-color: rgba(250, 235, 215, 0.362);
     transition: 300ms;
-
 }
+
 .calendar {
     /* overflow-x: auto; */
     background-color: rgba(245, 245, 220, 0.311);
@@ -29,3 +29,13 @@
     transition: 300ms;
 }
 
+
+.headerBoxAnswer{
+    background-color: rgba(184, 231, 225, 0.774);
+    border-radius: 55%;
+}
+
+.headerBoxAnswer:hover{
+    background-color: rgba(184, 231, 225, 0.627);
+    transition: 300ms;
+}
