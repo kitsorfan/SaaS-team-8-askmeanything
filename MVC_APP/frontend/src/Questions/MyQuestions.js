@@ -59,7 +59,7 @@ function MyQuestions() {
         <Link className="btn  s2 alignCenter" to={{
                 pathname: "/newQuestion",
 
-              }}>😮You have no questions. Ask now your 1st question💡 </Link>
+              }}>😮 You have no questions. Ask your 1st question now! 💡 </Link>
         
 
         </div>:
@@ -69,7 +69,7 @@ function MyQuestions() {
               <div className="fourHead">
                 <span className="id">Question {question.ID}</span> ▪ 
                 
-                <span className="tag" > #{question.tag}</span>  ▪ 
+                <span className="tag" > #{question.tag}</span>   
                 <span className="day"> 📅  {question.day}</span> 
               </div>
               <hr className="line"></hr>
