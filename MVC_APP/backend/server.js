@@ -28,7 +28,7 @@ const app = express();                          // 1. create Express app
 
 
 // Sync to DB
-const db = require("../app/models");
+const db = require("./app/models");
 db.sequelize.sync();
 
 // Rest
@@ -52,19 +52,19 @@ app.get("/", (req, res) => {
 });
 
 // routes
-require('../app/routes/auth.routes')(app);
-require('../app/routes/user.routes')(app);
-require('../app/routes/public/questionsPerKeyword.routes')(app);
-require('../app/routes/public/questionsPerDay.routes')(app);
-require('../app/routes/public/allTags.routes')(app);
-require('../app/routes/public/countQuestions.routes')(app);
-require('../app/routes/userCreate/newQuestion.routes')(app);
-require('../app/routes/userCreate/newAnswer.routes')(app);
-require('../app/routes/userData/allQuestions.routes')(app);
-require('../app/routes/userData/myQuestions.routes')(app);
-require('../app/routes/userData/myAnswers.routes')(app);
-require('../app/routes/userData/myAnswersPerDay.routes')(app);
-require('../app/routes/userData/answersOfQuestion.routes')(app);
+require('./app/routes/auth.routes')(app);
+require('./app/routes/user.routes')(app);
+require('./app/routes/public/questionsPerKeyword.routes')(app);
+require('./app/routes/public/questionsPerDay.routes')(app);
+require('./app/routes/public/allTags.routes')(app);
+require('./app/routes/public/countQuestions.routes')(app);
+require('./app/routes/userCreate/newQuestion.routes')(app);
+require('./app/routes/userCreate/newAnswer.routes')(app);
+require('./app/routes/userData/allQuestions.routes')(app);
+require('./app/routes/userData/myQuestions.routes')(app);
+require('./app/routes/userData/myAnswers.routes')(app);
+require('./app/routes/userData/myAnswersPerDay.routes')(app);
+require('./app/routes/userData/answersOfQuestion.routes')(app);
 
 
 
