@@ -1,14 +1,23 @@
 version: '3'
  
+
+networks:
+  app-tier:
+    driver: bridge
+
 services:
   db:
     image: mysql:5.7
     container_name: db
+    restart: always
+    env_file: ./.env
     environment:
       MYSQL_ROOT_PASSWORD: sqlpassword
       MYSQL_DATABASE: ama_mvc
       MYSQL_USER: user
       MYSQL_PASSWORD: sqlpassword
+    networks:
+      - app-tier
     ports:
       - "3306:3306"
     volumes:
@@ -16,11 +25,25 @@ services:
 
   backend:
     depends_on:
-      - db
+    - db
     build: ./backend
-    container_name: backend
+    restart: unless-stopped
+    env_file: ./.env
+    networks:
+      - app-tier
+    command: bash -c 'while !</dev/tcp/db/3306; do sleep 1; done; npm start'
+  
     ports:
       - 8080:8080
+    container_name: backend
+    stdin_open: true
+    tty: true
+    # # depends_on:
+    # #   - db
+    # # build: ./backend
+    # container_name: backend
+    # ports:
+    #   - 8080:8080
 
   frontend:
     build: ./frontend
