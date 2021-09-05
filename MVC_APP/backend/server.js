@@ -73,8 +73,6 @@ require('./app/routes/userData/answersOfQuestion.routes')(app);
 
 
 
-// set port, listen for requests
-
 // 3. set port, listen for requests
 const PORT = process.env.PORT || 8080;      // 8080 for http requests
 app.listen(PORT, () => {

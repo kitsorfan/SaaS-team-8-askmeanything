@@ -12,10 +12,10 @@ exports.questionsPerKeyword = (req, res) => {
     },
     raw: true,
     attributes: [
-      [sequelize.literal('questionTag.tag'),'id'],
+      [sequelize.literal('questiontag.tag'),'id'],
       [sequelize.fn('COUNT', sequelize.col('tag')), 'value'],
 ],
-group: 'questionTag.id'
+group: 'questiontag.id'
 })
 
 
