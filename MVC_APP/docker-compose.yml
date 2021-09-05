@@ -1,0 +1,34 @@
+version: '3'
+ 
+services:
+  db:
+    image: mysql:5.7
+    container_name: db
+    environment:
+      MYSQL_ROOT_PASSWORD: sqlpassword
+      MYSQL_DATABASE: ama_mvc
+      MYSQL_USER: user
+      MYSQL_PASSWORD: sqlpassword
+    ports:
+      - "3306:3306"
+    volumes:
+      - dbdata:/var/lib/mysql
+
+  backend:
+    depends_on:
+      - db
+    build: ./backend
+    container_name: backend
+    ports:
+      - 8080:8080
+
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    ports:
+      - 3000:3000
+
+
+volumes:
+  dbdata:
+  
