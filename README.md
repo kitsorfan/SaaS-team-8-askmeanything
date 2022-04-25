@@ -1,14 +1,11 @@
 # <b> AskMeAnything🎇</b>
 ### Semester project for 'Software as a Service' course at [ECE](https://www.ece.ntua.gr/en)⚡, [NTUA](https://www.ntua.gr/en)🎓, academic year 2020-2021
 
+<img alt="MySQL" src = "https://img.shields.io/badge/MySQL-1136AA?style=for-the-badge&logo=MySQL&logoColor=white" height="28"> <img alt="Spark SQL" src = "https://img.shields.io/badge/React js-important?style=for-the-badge&logo=react&logoColor=white" height="28"> <img alt="Node Express" src = "https://img.shields.io/badge/Node Express-blue?style=for-the-badge&logo=Node.js&logoColor=black" height="28">
+
 ## 📋**Description**
 
 This repository contains an implementation of a basic **Question and Answer** web app, named as **AskMeAnything**. The project was elaborated for the SaaS course at ECE, NTUA, academic year 2021-2022.
-
-**Details:**
--
--
-
 
 
 ### 👔Team Members
