@@ -1,7 +1,7 @@
 # <b> AskMeAnything🎇</b>
 ### Semester project for 'Software as a Service' course at [ECE](https://www.ece.ntua.gr/en)⚡, [NTUA](https://www.ntua.gr/en)🎓, academic year 2020-2021
 
-<img alt="MySQL" src = "https://img.shields.io/badge/MySQL-1136AA?style=for-the-badge&logo=MySQL&logoColor=white" height="28"> <img alt="Node Express" src = "https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=node.js&logoColor=white" height="28"> <img alt="Spark SQL" src = "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" height="28">
+<img alt="MySQL" src = "https://img.shields.io/badge/MySQL-1136AA?style=for-the-badge&logo=MySQL&logoColor=white" height="28"> <img alt="Node Express" src = "https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=node.js&logoColor=white" height="28"> <img alt="Spark SQL" src = "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" height="28"> <img alt="Docker" src = "https://img.shields.io/badge/Docker-4287F5?style=for-the-badge&logo=Docker&logoColor=white" height="28">
 
 ## 📋**Description**
 
