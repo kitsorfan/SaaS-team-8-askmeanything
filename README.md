@@ -21,10 +21,11 @@ This repository contains an implementation of a basic **Question and Answer** we
     - MVC
 
     
-###  🔵Technonlogies
+###  🔵Technologies
     - 🔐 MySQL
     - 💻 Node Express (JWT, Sequeilize)
     - 🎨 React JS (Axios, Bootstrap, React-Dom)
+    - 📦 Docker & Docker-Compose
 
 ###  🟣Documentation
 
