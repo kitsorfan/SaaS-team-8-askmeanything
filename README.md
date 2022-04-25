@@ -14,7 +14,7 @@ This repository contains an implementation of a basic **Question and Answer** we
 |----------------------------------------------------------------|-------------------------|
 | [🔐Stylianos Kandylakis](https://github.com/stylkand/) |  <a href = "mailto:stelkcand@gmail.com" target="_blank"><img alt="gmail" src = "https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">   |
 | [💻Kitsos Orfanopoulos](https://github.com/kitsorfan)               | <a href = "mailto:kitsorfan@protonmail.com" target="_blank"><img alt="protonmail" src = "https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white" ></a>|
-| [🎨Vasilis Papalexis](https://github.com/ChristosTsoufis)                 | <a href = "mailto:chris99ts@gmail.com" target="_blank"><img alt="gmail" src = "https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">      |
+| [🎨Vasilis Papalexis](https://github.com/vaspapa)                 | <a href = "mailto:billpapalexis@gmail.com" target="_blank"><img alt="gmail" src = "https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">      |
 
 
 ###  🟢Used Architecture(s)
