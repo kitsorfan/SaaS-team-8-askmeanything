@@ -3,6 +3,9 @@
 
 <img alt="MySQL" src = "https://img.shields.io/badge/MySQL-1136AA?style=for-the-badge&logo=MySQL&logoColor=white" height="28"> <img alt="Node Express" src = "https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=node.js&logoColor=white" height="28"> <img alt="Spark SQL" src = "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" height="28"> <img alt="Docker" src = "https://img.shields.io/badge/Docker-4287F5?style=for-the-badge&logo=Docker&logoColor=white" height="28">
 
+<img alt="Byte Code Size" src="https://img.shields.io/github/languages/code-size/kitsorfan/SaaS-team-8-askmeanything?color=red" /> <img alt="# Lines of Code" src="https://img.shields.io/tokei/lines/github/kitsorfan/SaaS-team-8-askmeanything?color=red" /> <img alt="Last commit" src="https://img.shields.io/github/last-commit/kitsorfan/SaaS-team-8-askmeanything?color=important" />
+
+
 ## 📋**Description**
 
 This repository contains an implementation of a basic **Question and Answer** web app, named as **AskMeAnything**. The project was elaborated for the SaaS course at ECE, NTUA, academic year 2021-2022.
