@@ -36,7 +36,7 @@ This repository contains an implementation of a basic **Question and Answer** we
     - ERD diagram 
     - Component diagram for SOA architecture.
 
-###  🔴Agile Technology
+###  🔴Agile Methodology
     We used the platform Youtrack for the coordination of our efforts.
 
 ### **🔗Sources**
